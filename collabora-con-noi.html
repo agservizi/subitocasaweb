@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenzia Immobiliare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Stile interno */
+        body {
+            font-family: Nunito, sans-serif;
+        }
+
+        .navbar {
+            background-color: rgba(245, 244, 244, 150);
+            border: none;
+            box-shadow: none;
+        }
+
+        .navbar-brand img {
+            height: 60px;
+            width: auto;
+        }
+
+        .nav-link {
+            color: rgb(52, 58, 64) !important;
+        }
+
+        .nav-link:hover {
+            color: #095db1 !important;
+        }
+
+        .parallax {
+            background-image: url('img/photo.jpg');
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .parallax h1 {
+            font-size: 4rem;
+        }
+
+        .parallax p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        .btn-primary {
+            background-color: #0062cc;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #004a99;
+        }
+
+        /* Footer Style */
+        .footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer h5 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .footer a {
+            color: white;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+            color: #0062cc;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .footer .bi {
+            font-size: 1.2rem;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.mlsagentre.it/sito/1235/">
+                <img src="img/logo-scw.png" alt="Logo Agenzia">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.mlsagentre.it/sito/1235/richiesta/8911/">Cerca casa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.mlsagentre.it/sito/1235/vendi/">Vendi casa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="collabora-con-noi.html">Collabora con noi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.mlsagentre.it/sito/1235/contatti/">Contatti</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sezione Parallax -->
+    <div class="parallax">
+        <div>
+            <h1>Guadagna con le tue conoscenze immobiliari</h1>
+            <p>Diventa un partner di Subito CASA web e ottieni profitti segnalando immobili in vendita!</p>
+        </div>
+    </div>
+
+    <!-- Sezioni del sito -->
+    <section id="chi-siamo" class="section bg-light">
+        <div class="container">
+            <h2>Partecipa al nostro programma</h2>
+        </div>
+    </section>
+
+    <section id="servizi" class="section">
+        <div class="container">
+            <h2>Servizi</h2>
+            <p>Offriamo un'ampia gamma di servizi per aiutarti a trovare la casa perfetta.</p>
+            <ul>
+                <li>Vendita di immobili</li>
+                <li>Affitto di proprietà residenziali e commerciali</li>
+                <li>Consulenza immobiliare</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="proprietà" class="section bg-light">
+        <div class="container">
+            <h2>Le Nostre Proprietà</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/photo2.jpg" class="card-img-top" alt="Proprietà 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nessun requisito</h5>
+                            <p class="card-text">Chiunque può partecipare, senza bisogno di esperienza o qualifiche
+                                particolari.</p>
+                            <a href="#esempio" class="btn btn-primary">Scopri di più</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/photo3.jpg" class="card-img-top" alt="Proprietà 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Semplicità</h5>
+                            <p class="card-text">Il processo è facile e intuitivo: basta condividere informazioni sugli
+                                immobili in vendita.</p>
+                            <a href="#esempio" class="btn btn-primary">Scopri di più</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/photo4.jpg" class="card-img-top" alt="Proprietà 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Flessibilità</h5>
+                            <p class="card-text">Decidi quando e dove lavorare, gestendo il tuo tempo in modo autonomo.
+                            </p>
+                            <a href="#esempio" class="btn btn-primary">Scopri di più</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti -->
+    <section id="contatti" class="section">
+        <div class="container">
+            <h2>Contattaci</h2>
+            <p>Compila il modulo sottostante per ricevere maggiori informazioni.</p>
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Il tuo nome">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="La tua email">
+                </div>
+                <div class="mb-3">
+                    <label for="messaggio" class="form-label">Messaggio</label>
+                    <textarea class="form-control" id="messaggio" rows="4" placeholder="Il tuo messaggio"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Invia</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Collegamenti Rapidi</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#chi-siamo">Chi Siamo</a></li>
+                        <li><a href="#servizi">Servizi</a></li>
+                        <li><a href="#proprietà">Proprietà</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contatti</h5>
+                    <p><i class="bi bi-envelope"></i> email@esempio.com</p>
+                    <p><i class="bi bi-telephone"></i> +39 123 456 789</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Seguici</h5>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <?php
+    // Funzione per comprimere una singola immagine JPEG
+    function compressImage($source, $destination, $quality) {
+        // Carica l'immagine
+        $image = imagecreatefromjpeg($source);
+    
+        // Comprime e salva l'immagine
+        imagejpeg($image, $destination, $quality); // Comprime in JPEG
+    
+        // Distruggi l'immagine in memoria per liberare risorse
+        imagedestroy($image);
+    
+        return true;
+    }
+    
+    // Array delle immagini da comprimere
+    $images = [
+        'img/photo.jpg',
+        'img/photo1.jpg',
+        'img/photo2.jpg',
+        'img/photo3.jpg'
+    ];
+    
+    // Cartella di destinazione per le immagini compresse
+    $compressedDirectory = 'img/compressed/';
+    
+    // Crea la cartella per le immagini compresse, se non esiste
+    if (!is_dir($compressedDirectory)) {
+        mkdir($compressedDirectory, 0777, true);
+    }
+    
+    // Definisci la qualità per la compressione JPEG (tra 0 e 100)
+    $quality = 75;
+    
+    // Per ogni immagine specificata nell'array
+    foreach ($images as $image) {
+        // Estrai il nome dell'immagine senza estensione
+        $imageName = basename($image);
+    
+        // Percorso di destinazione per l'immagine compressa
+        $destination = $compressedDirectory . $imageName;
+    
+        // Comprime l'immagine
+        if (compressImage($image, $destination, $quality)) {
+            echo "Immagine $imageName compressa con successo!<br>";
+        } else {
+            echo "Errore nella compressione di $imageName!<br>";
+        }
+    }
+    ?>
+
+</body>
+
+</html>
