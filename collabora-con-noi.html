@@ -93,32 +93,58 @@
         </div>
     </section>
 
-    <section id="servizi" class="section">
+    <section id="proprietà" class="section bg-light">
         <div class="container">
-            <h2>Servizi</h2>
-            <p>Offriamo un'ampia gamma di servizi per aiutarti a trovare la casa perfetta.</p>
-                <p>Vendita di immobili</p>
-                <p>Affitto di proprietà residenziali e commerciali</p>
-                <p>Consulenza immobiliare</p>
+            <h2>Cosa chiediamo</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/photo5.jpg" class="card-img-top" alt="Proprietà 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Condividi dettagli</h5>
+                            <p class="card-text">Fornisci informazioni accurate su immobili in vendita, come indirizzo, prezzo, tipologia e foto.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/photo6.jpg" class="card-img-top" alt="Proprietà 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Ottieni il consenso</h5>
+                            <p class="card-text">Assicurati di avere il consenso del proprietario per la vendita e la divulgazione dei dati.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/photo7.jpg" class="card-img-top" alt="Proprietà 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ricevi la commissione</h5>
+                            <p class="card-text">Guadagna una commissione sulla vendita dell'immobile, a conclusione dell'accordo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- Contatti -->
+
+    <!-- Sezione Contatti -->
     <section id="contatti" class="section">
         <div class="container">
-            <h2>Contattaci</h2>
-            <p>Compila il modulo sottostante per ricevere maggiori informazioni.</p>
-            <form>
+            <h2>Contattaci per maggiori informazioni</h2>
+            <p>Compila il modulo sottostante per entrare in contatto con noi. Siamo a tua disposizione per qualsiasi domanda o chiarimento!</p>
+            <form method="POST" action="send_email.php">
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Il tuo nome">
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Il tuo nome" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="La tua email">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="La tua email" required>
                 </div>
                 <div class="mb-3">
                     <label for="messaggio" class="form-label">Messaggio</label>
-                    <textarea class="form-control" id="messaggio" rows="4" placeholder="Il tuo messaggio"></textarea>
+                    <textarea class="form-control" id="messaggio" name="messaggio" rows="4" placeholder="Il tuo messaggio" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Invia</button>
             </form>
