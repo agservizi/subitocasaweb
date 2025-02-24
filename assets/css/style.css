@@ -1,91 +1,101 @@
-        body {
-            font-family: Nunito, sans-serif;
-        }
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+}
 
-        .navbar {
-            background-color: rgba(245, 244, 244, 150);
-            border: 10px;
-            box-shadow: 10px;
-        }
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-        .navbar-brand img {
-            height: 60px;
-            width: auto;
-        }
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+}
 
-        .nav-link {
-            color: rgb(52, 58, 64) !important;
-            
-        }
+.nav-link {
+    color: #343a40 !important;
+    font-weight: 500;
+}
 
-        .nav-link:hover {
-            color: #095db1 !important;
-        }
+.nav-link:hover {
+    color: #095db1 !important;
+}
 
-        .parallax {
-            background-image: url("/img/photo.jpg");
-            height: 100vh;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
+.parallax {
+    background-image: url("/img/photo.jpg");
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
 
-        .parallax h1 {
-            font-size: 4rem;
-        }
+.parallax h1 {
+    font-size: 3rem;
+}
 
-        .parallax p {
-            font-size: 1.5rem;
-            margin-top: 20px;
-        }
+.parallax p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
 
-        .section {
-            padding: 60px 20px;
-        }
+.section {
+    padding: 60px 20px;
+}
 
-        .btn-primary {
-            background-color: #0062cc;
-            border: none;
-        }
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
 
-        .btn-primary:hover {
-            background-color: #004a99;
-        }
+.card:hover {
+    transform: translateY(-10px);
+}
 
-        /* Footer Style */
-        .footer {
-            background-color: rgba(25, 42, 108, 0.952);
-            color: white;
-            padding: 40px 0;
-        }
+.btn-primary {
+    background-color: #0062cc;
+    border: none;
+}
 
-        .footer h5 {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
+.btn-primary:hover {
+    background-color: #004a99;
+}
 
-        .footer a {
-            color: white;
-        }
+/* Footer Style */
+.footer {
+    background-color: #192a6c;
+    color: white;
+    padding: 40px 0;
+}
 
-        .footer a:hover {
-            text-decoration: none;
-            color: #0062cc;
-        }
+.footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
 
-        .footer p {
-            margin: 0;
-            font-size: 0.9rem;
-        }
+.footer a {
+    color: white;
+}
 
-        .footer .bi {
-            font-size: 1.2rem;
-            vertical-align: middle;
-        }
+.footer a:hover {
+    text-decoration: none;
+    color: #0062cc;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer .bi {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
